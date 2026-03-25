@@ -49,6 +49,15 @@ a {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+}
+
+/* Ensure all background images are contained */
+[style*="background-image"],
+[style*="background:"] {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /* Container */
@@ -291,9 +300,10 @@ img {
             rgba(11, 11, 11, 0.98) 100%
         ),
         url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920&q=95&fit=crop');
-    background-position: center 30%;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .hero-content {
@@ -427,7 +437,10 @@ img {
     height: 250px;
     background:
         linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(34, 211, 238, 0.08) 100%),
-        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=90') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=90');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: var(--radius);
     position: relative;
     overflow: hidden;
@@ -715,7 +728,10 @@ img {
     height: 280px;
     background:
         linear-gradient(135deg, rgba(34, 211, 238, 0.1) 0%, rgba(37, 99, 235, 0.15) 100%),
-        url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=900&q=90') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=900&q=90');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: var(--radius);
     position: relative;
 }
@@ -725,9 +741,14 @@ img {
 ======================================== */
 .women-section {
     padding: 60px 0;
-    background:
+    background-color: #0B0B0B;
+    background-image:
         linear-gradient(135deg, rgba(11, 11, 11, 0.88) 0%, rgba(11, 11, 11, 0.85) 100%),
-        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&q=90') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&q=90');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     position: relative;
     overflow: hidden;
 }
@@ -806,9 +827,14 @@ img {
 ======================================== */
 .testimonials {
     padding: 60px 0;
-    background:
+    background-color: #0B0B0B;
+    background-image:
         linear-gradient(180deg, rgba(11, 11, 11, 0.94) 0%, rgba(11, 11, 11, 0.92) 100%),
-        url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1920&q=90') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1920&q=90');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .testimonials-grid {
@@ -996,9 +1022,14 @@ img {
     text-align: center;
     position: relative;
     overflow: hidden;
-    background:
+    background-color: #0B0B0B;
+    background-image:
         linear-gradient(180deg, rgba(11, 11, 11, 0.85) 0%, rgba(11, 11, 11, 0.8) 100%),
-        url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1920&q=90') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1920&q=90');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .final-cta::before {
@@ -1780,13 +1811,64 @@ body {
 ======================================== */
 @media (max-width: 768px) {
     .hero-bg {
-        background-position: center 25%;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .women-section,
+    .testimonials,
+    .final-cta {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .about-img-main {
+        height: 220px;
+        background-position: center center;
+    }
+
+    .why-img-wrapper {
+        height: 250px;
+        background-position: center center;
     }
 }
 
 @media (max-width: 480px) {
     .hero-bg {
-        background-position: center 20%;
+        background-position: 60% center;
         background-size: cover;
+    }
+
+    .about-img-main {
+        height: 200px;
+        background-position: center center;
+    }
+
+    .why-img-wrapper {
+        height: 220px;
+        background-position: center center;
+    }
+
+    .women-section {
+        background-position: center center;
+    }
+
+    .testimonials {
+        background-position: center center;
+    }
+
+    .final-cta {
+        background-position: center center;
+    }
+
+    .contact-map {
+        height: 250px;
+    }
+
+    .contact-map iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
     }
 }
