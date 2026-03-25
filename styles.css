@@ -743,9 +743,9 @@ img {
     padding: 60px 0;
     background-color: #0B0B0B;
     background-image:
-        linear-gradient(135deg, rgba(11, 11, 11, 0.88) 0%, rgba(11, 11, 11, 0.85) 100%),
-        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&q=90');
-    background-position: center center;
+        linear-gradient(135deg, rgba(11, 11, 11, 0.85) 0%, rgba(11, 11, 11, 0.88) 100%),
+        url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&q=85&fit=crop');
+    background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -829,8 +829,8 @@ img {
     padding: 60px 0;
     background-color: #0B0B0B;
     background-image:
-        linear-gradient(180deg, rgba(11, 11, 11, 0.94) 0%, rgba(11, 11, 11, 0.92) 100%),
-        url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1920&q=90');
+        linear-gradient(180deg, rgba(11, 11, 11, 0.92) 0%, rgba(11, 11, 11, 0.94) 100%),
+        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=85&fit=crop');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1815,8 +1815,20 @@ body {
         background-size: cover;
     }
 
-    .women-section,
-    .testimonials,
+    .women-section {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center top;
+        min-height: auto;
+    }
+
+    .testimonials {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+        min-height: auto;
+    }
+
     .final-cta {
         background-attachment: scroll;
         background-size: cover;
@@ -1831,6 +1843,19 @@ body {
     .why-img-wrapper {
         height: 250px;
         background-position: center center;
+    }
+
+    .women-feature {
+        padding: 24px 20px;
+    }
+
+    .women-feature-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .testimonial-card {
+        padding: 24px 20px;
     }
 }
 
@@ -1851,14 +1876,84 @@ body {
     }
 
     .women-section {
-        background-position: center center;
+        padding: 48px 0;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .women-content {
+        padding: 0 8px;
+    }
+
+    .women-text {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+        line-height: 1.7;
+    }
+
+    .women-features {
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .women-feature {
+        padding: 20px 16px;
+    }
+
+    .women-feature-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+    }
+
+    .women-feature h4 {
+        font-size: 1rem;
+    }
+
+    .women-feature p {
+        font-size: 13px;
     }
 
     .testimonials {
+        padding: 48px 0;
         background-position: center center;
+        background-size: cover;
+    }
+
+    .testimonials-grid {
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .testimonial-card {
+        padding: 20px 16px;
+    }
+
+    .testimonial-text {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-rating span {
+        font-size: 16px;
+    }
+
+    .author-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .testimonial-author strong {
+        font-size: 14px;
+    }
+
+    .testimonial-author span {
+        font-size: 12px;
     }
 
     .final-cta {
+        padding: 48px 0;
         background-position: center center;
     }
 
