@@ -1,5 +1,5 @@
 /* ========================================
-   ADDICT GYM - JavaScript Interactions
+    POWERHOUSE DEMO GYM - JavaScript Interactions
 ======================================== */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -195,5 +195,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', highlightNavLink);
 
-    console.log('ADDICT GYM website loaded successfully!');
+    console.log('POWERHOUSE DEMO GYM website loaded successfully!');
 });
